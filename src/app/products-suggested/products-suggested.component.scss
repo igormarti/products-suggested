@@ -1,0 +1,64 @@
+.products-suggested-container{
+    display: flex;
+    flex-direction: column;
+    border: 4px green dotted;
+    min-height: 100vh;
+}
+
+.products-suggested-title{
+    margin: 5px;
+}
+
+.products-suggested-list{
+    flex: 100vh;
+    display: flex; /* Enable Flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to multiple lines */
+    justify-content: space-between; /* Distribute cards evenly with spacing */
+    margin: 20px;
+}
+
+.products-suggested-card{
+    width: 150px;
+    max-height: 300px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Prevent image overflow */
+    background-color: #fff;
+    height: fit-content;
+}
+
+.products-suggested-card img {
+    width: 100%;
+    height:150px;
+    object-fit: cover;
+}
+
+.products-suggested-card-content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: flex-start;
+
+    h4 {
+        margin-bottom: 0;
+    }
+      
+    .products-suggested-card-description {
+        font-size: 12px;
+        color: #333;
+        line-height: 1.5;
+        display: inline-block;
+        max-width: 110px; /* Limita a largura a 30 caracteres mais ou menos */
+        white-space: nowrap; /* Impede quebra de linha */
+        overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite */
+        text-overflow: ellipsis; /* Adiciona "..." ao final do texto */
+      }
+      
+    .products-suggested-card-price {
+        font-weight: bold;
+        color: #007bff;
+    }
+}

@@ -1,1 +1,13 @@
-<p>products-suggested works! REMOTE</p>
+<div class="products-suggested-container" >
+    <h3 class="products-suggested-title" >Products Suggested</h3> 
+    <div class="products-suggested-list" >
+        <div class="products-suggested-card"  *ngFor="let product of products" >
+            <img [src]="'data:image/png;base64,'+product.image"  />
+            <div class="products-suggested-card-content" >
+                <h4>{{product.name}}</h4>
+                <p class="products-suggested-card-description" >{{product.description}}</p>
+                <span class="products-suggested-card-price" >R$ {{product.price}}</span>
+            </div>
+        </div>
+    </div>
+</div>

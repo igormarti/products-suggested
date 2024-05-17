@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsSuggestedComponent } from './products-suggested/products-suggested.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { ProductsSuggestedComponent } from './products-suggested/products-sugges
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProductsSuggestedComponent
+    ProductsSuggestedComponent,
+    HttpClientModule
   ],
   exports: [
     ProductsSuggestedComponent

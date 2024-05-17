@@ -4,7 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:stub": "ng serve --configuration stub",
     "build": "ng build",
+    "build:stub": "ng build --configuration=stub",
+    "build:development": "ng build --configuration=development",
+    "stubmatic": "stubmatic -v --debug -d repo -c config.json",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
